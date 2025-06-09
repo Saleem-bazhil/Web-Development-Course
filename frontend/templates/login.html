@@ -1,0 +1,41 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    {% load django_bootstrap5 %}
+    {% bootstrap_css %}
+    {% bootstrap_javascript %}
+</head>
+
+<body>
+    <script src="{% static 'js/email.js' %}?v=999"></script>
+    <h1>Login Page</h1>
+
+    <form method="POST">
+
+        {% csrf_token %}
+
+        <div class="mb-3">
+            <label for="Username" class="form-label">Username</label>
+            <input type="username" class="form-control" name="username" id="username"
+                aria-describedby="emailHelp">
+        </div>
+        <div class="mb-3">
+            <label for="exampleInputPassword1" class="form-label">Password</label>
+            <input type="password" class="form-control" name="password" id="password">
+        </div>
+        <p>{{error}}</p>
+        <div class="mb-3">
+            <button type="submit" class="btn btn-primary">Submit</button>
+            <button class="btn btn-primary"><a class="text-light text-decoration-none"
+                    href="/signup/">SignUp</a></button>
+        </div>
+    </form>
+
+</body>
+
+</html>

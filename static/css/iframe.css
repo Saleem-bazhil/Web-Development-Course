@@ -1,0 +1,32 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+html,body {
+  overflow-x: hidden !important;
+}
+.video {
+    min-height: 100vh;
+    width: 100%;
+    background-color: #7445FF;
+}
+
+iframe {
+border: 2px solid #C084FC; /* Soft lavender-pink glow */
+box-shadow: 0 0 12px #C084FC, 0 0 24px #7445FF;
+    border-radius: 15px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+border-image-slice: 1;
+
+}
+iframe:hover {
+  transform: scale(1.02);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.4);
+}
+@media only screen and (max-width:600px) {
+    iframe{
+        height: 213px;
+    }
+
+}

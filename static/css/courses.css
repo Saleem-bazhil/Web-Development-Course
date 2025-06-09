@@ -1,0 +1,54 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+html,body {
+  overflow-x: hidden !important;
+}
+
+.courses {
+  min-height: 100vh;
+  width: 100%;
+  /* background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../assets/images/purple.png); */
+  background-color: #7445FF;
+}
+
+.courses .container-fluid {
+  min-height: 100vh;
+  width: 100%;
+
+}
+
+.card {
+  /* background-image: url(../assets/images/wallpaper.png) !important; */
+  background: black !important;
+  backdrop-filter: blur(10px);
+  border: 2px solid black;
+  border-radius: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  padding: 20px;
+  box-shadow: 0px 0px 15px black;
+  transition: 0.5s;
+}
+
+.card:hover {
+  transform: scale(1.03);
+ box-shadow: 0 0px 20px rgba(0, 0, 0, 0.8);
+}
+.card .btn{
+  background: linear-gradient(135deg, rgba(116, 69, 255, 0.8), rgba(173, 90, 255, 0.7));
+  border: 2px solid rgba(116, 69, 255, 0.6);
+  padding: 12px;
+  border-radius: 8px;
+  color: #fff;
+  box-shadow: 0 4px 20px rgba(116, 69, 255, 0.6);
+  transition: all 0.3s ease;
+  position: relative;
+  left: 5px;
+} 
+.card .btn:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 30px rgba(116, 69, 255, 0.9);
+  background: linear-gradient(135deg, rgba(116, 69, 255, 1), rgba(173, 90, 255, 1));
+  color: #fff;
+}

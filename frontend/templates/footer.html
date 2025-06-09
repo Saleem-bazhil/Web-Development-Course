@@ -1,0 +1,42 @@
+<footer class="d-flex justify-content-center align-items-center">
+    <div class="container">
+        <div class="row ">
+            <div class="col-lg-6 col-11 d-flex justify-content-start align-items-center">
+                <div id="form">
+                    <form action="/email/" id="form_text" method="POST">
+                        {% csrf_token %}
+
+                        <h1 class="my-5">Enjoy Your learning</h1>
+                        <p>This website is used to learn various technologies.</p>
+                        <div class="d-flex">
+                            <input class="form-control me-3 " type="email" placeholder="you@gamil.com" name="email" id="email">
+                            <input class="btn btn-outline-dark px-4" type="submit" onclick="submitEmail()">
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div class="col-lg-3 col-11 ">
+                <div id="learn">
+                    <h1 class="my-4">Learn</h1>
+                    <p class="my-4">HTML</p>
+                    <p class="my-4">CSS</p>
+                    <p class="my-4">Javascript</p>
+                    <p class="my-4">React</p>
+                    <p class="my-4">Bootstrap</p>
+                    <p class="my-4">Python</p>
+                    <p class="my-4">Django</p>
+                </div>
+            </div>
+            <div class="col-lg-3 col-11">
+                <div id="credits">
+                    <h1 class="my-4">video credits</h1>
+                    <p class="my-4">Error Makes Clever</p>
+                    <p class="my-4">Code io</p>
+                    <p class="my-4">Code Camp Tamil</p>
+                    <p class="my-4">JASF Code School Tamil</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+<section class="lastpage"></section>

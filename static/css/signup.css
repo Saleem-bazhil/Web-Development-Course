@@ -1,0 +1,42 @@
+section {
+    background-color: #6C3EF5;
+    height: 100vh;
+    width: 100%;
+}
+html,body {
+  overflow-x: hidden !important;
+}
+
+section .container {
+    height: 600px;
+    width: 600px;
+    border: 2px solid rgba(255, 255, 255, 0.15);
+    border-radius: 40px;
+    background: linear-gradient(145deg, #6a11cb, #2575fc);
+}
+
+section .form-control {
+    width: 400px;
+    background-color: transparent;
+    border: 2px solid rgba(255, 255, 255, 0.15);
+      transition: 0.3s ease;
+}
+input:hover,
+input:focus {
+  border-bottom: 2px solid #00BFFF;
+}
+
+section button {
+      background: linear-gradient(135deg, #7F00FF, #00BFFF);
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 8px !important;
+  box-shadow: 0 0 10px rgba(0,0,0,0.2);
+  transition: 0.3s;
+
+}
+section button:hover{
+      transform: scale(1.05);
+  box-shadow: 0 0 15px rgba(0,0,0,0.3);
+}

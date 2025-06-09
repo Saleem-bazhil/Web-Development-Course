@@ -1,0 +1,217 @@
+@import url('https://fonts.googleapis.com/css2?family=Agbalumo&family=Bebas+Neue&family=Cascadia+Mono:ital,wght@0,200..700;1,200..700&family=Comic+Relief:wght@400;700&family=Exile&family=Monoton&family=Nosifer&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Ribeye+Marrow&family=Roboto:ital,wght@0,100..900;1,100..900&family=Tagesschrift&display=swap');
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,body {
+  overflow-x: hidden !important;
+}
+
+.first_section {
+  min-height: 90vh;
+  width: 100%;
+  background-color: #7445FF;
+}
+
+.first_section h2 {
+  font-size: 44px;
+  font-family: "Monoton", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  color: #FFFFFF;
+  position: relative;
+  top: 3px;
+}
+
+.first_section button {
+  background-color: #FDDD35; 
+  color: #030303 !important;
+  border: none !important;
+  box-shadow: 0px 0px 10px black;
+  padding: 13px;
+  border-radius: 5px;
+  font-family: "Tagesschrift", system-ui;
+  font-weight: 400;
+  font-style: normal;
+  transition: all 0.3s ease;
+}
+
+.first_section button:hover {
+  background-color: #FDDD35;
+  transform: scale(1.05);
+  box-shadow: 0px 0px 15px #333;
+  color: #000 !important;
+  cursor: pointer;
+}
+
+.first_section .student_img {
+  height: 1700px;
+}
+
+#logo_img {
+  position: relative;
+  top: 30px;
+}
+
+#logo_img img {
+  height: 20px;
+  width: 75px;
+}
+
+#logo_img p {
+  color: #FFFFFF;
+  font-family: "Tagesschrift", system-ui;
+  font-weight: 400;
+  font-style: normal;
+  position: relative;
+  top: 4px;
+}
+
+#img_banner {
+  height: 259px !important;
+  width: 348px !important;
+  position: relative;
+  top: 80px;
+  left: 100px;
+  box-shadow: 0px 0px 18px black;
+}
+
+#img_banner2 {
+  height: 250px;
+  width: 420px;
+  position: relative;
+  left: 66px;
+
+}
+
+@media only screen and (max-width: 600px) {
+
+
+  .first_section {
+    min-height: 100vh;
+  }
+
+  .first_section h2 {
+    font-size: 31px;
+    position: relative;
+    left: 22px;
+    top: 100px;
+    z-index: 3;
+  }
+
+  .first_section button {
+    position: relative;
+    left: 95px;
+    z-index: 3;
+  }
+
+  #logo_img {
+    position: relative;
+    top: 140px;
+    z-index: 3;
+  }
+
+  #logo_img img {
+    position: relative;
+    top: 75px;
+    right: 110px;
+    z-index: 3;
+
+  }
+
+  #logo_img p {
+    position: relative;
+    top: 81px;
+    right: 85px;
+    z-index: 3;
+  }
+
+  #img_header {
+    display: flex;
+    justify-content: center;
+  }
+
+  #img_banner {
+    height: 200px !important;
+    width: 278px !important;
+    position: absolute;
+    left: 68px;
+    top: 470px;
+    z-index: 1;
+  }
+
+  #img_banner2 {
+    height: 250px !important;
+    width: 284px !important;
+    position: absolute;
+    top: 540px;
+    z-index: 2;
+  }
+}
+
+.second_section {
+  min-height: 100vh;
+  width: 100%;
+  background-color: #7445FF;
+}
+
+.second_section .container-fluid {
+  min-height: 100vh;
+  width: 100%;
+}
+
+.second_section h1 {
+  color: #FFFFFF;
+  font-family: "Monoton", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  position: relative;
+  top: 95px;
+}
+
+.second_section_card {
+  position: relative;
+}
+
+.second_section_card h3 {
+  position: absolute;
+  color: #FFFFFF;
+  font-family: "Agbalumo", system-ui;
+  font-weight: 400;
+  font-style: normal;
+  bottom: 210px;
+  left: 80px;
+  text-shadow: 0px 0px 10px black;
+  z-index: 3;
+
+}
+
+@media only screen and (max-width: 600px) {
+  .second_section h1 {
+    position: absolute;
+    top: 858px;
+    font-size: 26px;
+    left: 27px;
+  }
+
+  #card1 {
+    position: relative;
+    right: 11px;
+  }
+
+  #card2 {
+    position: relative;
+    right: 23px;
+  }
+
+  #card3 {
+    position: relative;
+    right: 11px;
+  }
+
+}
+
