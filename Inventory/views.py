@@ -20,10 +20,10 @@ def Courses(request):
         {"image": "ht.png", "links": "/inventory/html/"},
         {"image": "css.jpeg", "links": "/inventory/css/"},
         {"image": "js.jpeg", "links": "/inventory/js/"},
-        {"image": "react.png", "links": ""},
+        {"image": "react.png", "links": "/inventory/react"},
         {"image": "bootstrap.png", "links": "/inventory/bootstrap/"},
-        {"image": "python.png", "links": ""},
-        {"image": "django.png", "links": ""},
+        {"image": "python.png", "links": "/inventory/python"},
+        {"image": "django.png", "links": "/inventory/django"},
     ]
 
     return render(request, "courses.html", {"cards": cards})
@@ -105,18 +105,60 @@ def JavacriptPage(request):
 
     return render(request, "js.html", {"data": data})
 
+
 def BootstrapPage(request):
+
+    data = [
+        {"links": "https://www.youtube.com/embed/cwcRJkknjl4?si=NrBFbbgtlqz58rlG"},
+        {"links": "https://www.youtube.com/embed/_8TrCzrhkJU?si=G8K8uxvSYUV23CLx"},
+        {"links": "https://www.youtube.com/embed/O3qCdIL8F9w?si=nPUT8WX_3dw04RH5"},
+        {"links": "https://www.youtube.com/embed/KYqllKwwf5A?si=wPBz_0Jt1nV3Y-jq"},
+        {"links": "https://www.youtube.com/embed/dt5MaeDApwA?si=MgHzJlS2F8m5YbWS"},
+        {"links": "https://www.youtube.com/embed/UHa9heaCpX0?si=O16ZimWBZjBRBuRc"},
+        {"links": "https://www.youtube.com/embed/pVB8_tJmsso?si=_C7fVflsgRe7q87M"},
+        {"links": "https://www.youtube.com/embed/iowddiMZu0s?si=A-FrgJ1mxKsGDSKN"},
+        {"links": "https://www.youtube.com/embed/XZ_x08DDKuI?si=y47wwT1MerDzxeus"},
+    ]
+
+    return render(request, "bootstrap.html", {"data": data})
+
+
+def React(request):
+
+    data = [
+        {"links": "https://www.youtube.com/embed/UYFtY7Acngw?si=OqnadcHvHCC55dcT"},
+        {"links": "https://www.youtube.com/embed/SAUBFF4e50k?si=TwFN28eavH7bY6y4"},
+        {"links": "https://www.youtube.com/embed/-kGdnjwTQww?si=yZQ5xPyQwh_GmnkAx"},
+        {"links": "https://www.youtube.com/embed/c1KKItIY8tg?si=1swgw5D2mM1T_tkn"},
+        {"links": "https://www.youtube.com/embed/9CvTo63v76k?si=483aGOpOu2q2s4wo"},
+        {"links": "https://www.youtube.com/embed/D-RBvg6vva8?si=pV92Kx4FAkPCYjLL"},
+    ]
+
+    return render(request, "react.html", {"data": data})
+
+
+def Python(request):
+
+    data = [
+        {"links": "https://www.youtube.com/embed/hSPwGniAafE?si=v-V61q4RGFhVrPFm"},
+        {"links": "https://www.youtube.com/embed/BVIoAILnZ4Q?si=_3jkVvbEHkBAR4Ok"},
+        {"links": "https://www.youtube.com/embed/Rtmgt2Qfqr4?si=eyRpvcgw9mV5GjiT"},
+        {"links": "https://www.youtube.com/embed/qEWkjSRQ2dA?si=tXWeXUE--HM6pVsH"},
+        {"links": "https://www.youtube.com/embed/CK938-UdPEE?si=dtBJmx_87vxma3Qc"},
+        {"links": "https://www.youtube.com/embed/dHzYLjfr-uY?si=-KIpwqJ5pMK1exKx"},
+    ]
+
+    return render(request, "python.html", {"data": data})
+
+def Django(request):
     
     data = [
-        {"links":"https://www.youtube.com/embed/cwcRJkknjl4?si=NrBFbbgtlqz58rlG"},
-        {"links":"https://www.youtube.com/embed/_8TrCzrhkJU?si=G8K8uxvSYUV23CLx"},
-        {"links":"https://www.youtube.com/embed/O3qCdIL8F9w?si=nPUT8WX_3dw04RH5"},
-        {"links":"https://www.youtube.com/embed/KYqllKwwf5A?si=wPBz_0Jt1nV3Y-jq"},
-        {"links":"https://www.youtube.com/embed/dt5MaeDApwA?si=MgHzJlS2F8m5YbWS"},
-        {"links":"https://www.youtube.com/embed/UHa9heaCpX0?si=O16ZimWBZjBRBuRc"},
-        {"links":"https://www.youtube.com/embed/pVB8_tJmsso?si=_C7fVflsgRe7q87M"},
-        {"links":"https://www.youtube.com/embed/iowddiMZu0s?si=A-FrgJ1mxKsGDSKN"},
-        {"links":"https://www.youtube.com/embed/XZ_x08DDKuI?si=y47wwT1MerDzxeus"},  
+        {"links":"https://www.youtube.com/embed/Vs-CmVKfWUA?si=MtSIdiavyw3cPaUl"},
+        {"links":"https://www.youtube.com/embed/_6mfe54eUVc?si=0ww0sPYYNfLzotEA"},
+        {"links":"https://www.youtube.com/embed/H_1VolxLMFw?si=gogjMLxS_o4-QeTM"},
+        {"links":"https://www.youtube.com/embed/U-jtmc2ipLA?si=qyUJMoCWOeVeZSL7"},
+        {"links":"https://www.youtube.com/embed/cVNTuZ_kVpg?si=ysadvyvkZ64_36OU"},
+        {"links":"https://www.youtube.com/embed/Tdpbx5N_SOA?si=7NQFF0meLwAfCbZj"},
     ]
     
-    return render(request,'bootstrap.html',{"data":data})
+    return render(request,'django.html',{"data":data})

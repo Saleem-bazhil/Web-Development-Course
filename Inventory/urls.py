@@ -8,5 +8,8 @@ urlpatterns = [
     path("html/", Htmlpage),
     path("css/", Csspage),
     path("js/", JavacriptPage),
-    path("bootstrap/",BootstrapPage),
+    path("bootstrap/", BootstrapPage),
+    path("react/", React),
+    path("python/", Python),
+    path('django/',Django),
 ]

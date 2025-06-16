@@ -33,24 +33,22 @@ def Signup(request):
     context = {"error": ""}
     if request.method == "POST":
         user_check = User.objects.filter(username=request.POST["username"])
-        if len(user_check) > 0:
-            context = {
-                "error": "Username Already Exists",
-            }
-        return render(request, "signup.html", context)
-    if request.method == "POST":
-        new_user = User(
-            username=request.POST["username"],
-            first_name=request.POST["firstname"],
-            last_name=request.POST["lastname"],
-            email=request.POST["email"],
-            reference=request.POST["reference"],
-            age=request.POST["age"],
-        )
-        new_user.set_password(request.POST["password"])
-        new_user.save()
-        return redirect("/")
+        if user_check.exists():
+            context["error"] = "Username Already Exists"
+            return render(request, "signup.html", context)
+        else:
+            new_user = User(
+                username=request.POST["username"],
+                first_name=request.POST["firstname"],
+                last_name=request.POST["lastname"],
+                email=request.POST["email"],
+            )
+            new_user.set_password(request.POST["password"])
+            new_user.save()
+            return redirect("/")
+
     return render(request, "signup.html", context)
+
 
 
 def email(request):
