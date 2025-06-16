@@ -26,7 +26,7 @@ SECRET_KEY = "django-insecure-lv&41ptic^n77!2w$*#@n0)_n*tca8h-=ou4a6hx5fx9*$k8cw
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ["*"]
 
 
 # Application definition
@@ -78,15 +78,21 @@ WSGI_APPLICATION = "astudent.wsgi.application"
 
 # Database
 # https://docs.djangoproject.com/en/5.2/ref/settings/#databases
+import os
+from dotenv import load_dotenv
+
+load_dotenv()
+
+import os
 
 DATABASES = {
-    "default": {
-        "ENGINE": "django.db.backends.mysql",
-        "NAME": "student",
-        "USER": "root",
-        "PASSWORD": "1234",
-        "HOST": "localhost",
-        "PORT": "3306",
+    'default': {
+        'ENGINE': 'django.db.backends.mysql',
+        'NAME': os.environ.get('DB_NAME', 'student'),         # ✔ Fallback to 'student'
+        'USER': os.environ.get('DB_USER', 'root'),            # ✔ Fallback to 'root'
+        'PASSWORD': os.environ.get('DB_PASSWORD', '1234'),    # ✔ Fallback to '1234'
+        'HOST': os.environ.get('DB_HOST', '127.0.0.1'),       # ✔ Correct host
+        'PORT': os.environ.get('DB_PORT', '3306'),            # ✔ Default MySQL port
     }
 }
 
