@@ -26,7 +26,11 @@ SECRET_KEY = "django-insecure-lv&41ptic^n77!2w$*#@n0)_n*tca8h-=ou4a6hx5fx9*$k8cw
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ["*"]
+ALLOWED_HOSTS = ['*']
+
+CSRF_TRUSTED_ORIGINS = [
+    'https://demo-5-j4vt.onrender.com',
+]
 
 
 # Application definition
