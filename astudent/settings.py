@@ -85,17 +85,13 @@ load_dotenv()
 
 import os
 
+
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.mysql',
-        'NAME': os.environ.get('DB_NAME', 'student'),         # ✔ Fallback to 'student'
-        'USER': os.environ.get('DB_USER', 'root'),            # ✔ Fallback to 'root'
-        'PASSWORD': os.environ.get('DB_PASSWORD', '1234'),    # ✔ Fallback to '1234'
-        'HOST': os.environ.get('DB_HOST', '127.0.0.1'),       # ✔ Correct host
-        'PORT': os.environ.get('DB_PORT', '3306'),            # ✔ Default MySQL port
+        'ENGINE': 'django.db.backends.sqlite3',
+        'NAME': BASE_DIR / 'db.sqlite3',  # Path to your SQLite file
     }
 }
-
 
 # Password validation
 # https://docs.djangoproject.com/en/5.2/ref/settings/#auth-password-validators
