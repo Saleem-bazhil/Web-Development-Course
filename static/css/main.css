@@ -9,6 +9,7 @@
 
 html,body {
   overflow-x: hidden !important;
+  overflow-y: hidden !important;
 }
 
 .first_section {
