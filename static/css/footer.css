@@ -58,12 +58,9 @@ footer #form_text .btn {
   bottom: 81px;
 }
 @media only screen and (max-width: 600px){
-  .lastpage{
-  height: 22vh;
-  width: 100%;
-}
+
   footer{
-    min-height: 112vh;
+    min-height: 130vh;
     width: 100%;
     text-align:  center;
   }
@@ -72,42 +69,42 @@ footer #form_text .btn {
     bottom: 10vh;
   }
   footer h1 {
-  font-size: 32px;
+  font-size: 2rem;
 
 }
 footer #form_text h1 {
   position: relative;
   bottom: 0px;
-  right: 4vh;
+  right: 4.3vh;
 }
 footer #form_text p {
   position: relative;
   bottom: 1vh;
-  right: 3vh;
+  right: 4vh;
 }
 
 footer #form_text .form-control {
   position: relative;
   bottom: 0px;
   top: 2vh;
-  left: 3vh;
+  left: 3.4vh;
   width: 300px;
   padding: 8px;
 }
 footer #form_text .btn {
   position: relative;
   bottom: 0;
-  top: 11vh;
-  right: 21vh;
+  top: 12vh;
+  right: 23vh;
 }
 footer #learn{
   position: relative;
-  top: 26px;
-  left: 8px;
+  top:5vh ;
+  
 }
 footer #credits{
     position: relative;
-  top: 26px;
-  left: 8px;
+  top: 5vh;
+  
 }
 }

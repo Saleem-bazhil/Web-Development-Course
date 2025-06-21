@@ -20,7 +20,6 @@ html,body {
   height: 100vh;
   width: 100%;
   display: flex;
-  /* justify-content: center; */
   align-items: center;
   position: relative;
   bottom: 10vh;
@@ -220,7 +219,7 @@ html,body {
 @media only screen and (max-width: 600px) {
   .second_section{
     position: relative;
-    min-height: 135vh;
+    min-height: 150vh;
   }
 .second_section h1 {
     position: absolute;
