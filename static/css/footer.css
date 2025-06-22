@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Agbalumo&family=Bebas+Neue&family=Cascadia+Mono:ital,wght@0,200..700;1,200..700&family=Comic+Relief:wght@400;700&family=Exile&family=Monoton&family=Nosifer&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Ribeye+Marrow&family=Roboto:ital,wght@0,100..900;1,100..900&family=Tagesschrift&display=swap');
+
+
 footer {
   min-height: 70vh;
   width: 100%;
@@ -31,22 +34,23 @@ footer #form_text p {
   bottom: 111px;
 }
 
-footer #form_text .form-control {
+footer #email {
   position: relative;
   bottom: 81px;
-  width: 300px;
-  padding: 10px;
-  background: #7445FF;
+  /* left: 130px; */
+  width: 300px !important;
+  height: 46px !important;
+  background: #7445FF !important;
   border: 2px solid rgba(255, 255, 255, 0.15);
   box-shadow: 0px 0px 10px black;
   color: #FFFFFF;
 }
 
-footer #form_text .form-control::placeholder {
+footer #email::placeholder {
   color: #FFFFFF;
 }
 
-footer #form_text .btn {
+footer #submit {
   color: #030303 !important;
   border: none !important;
   background-color: #FDDD35;
@@ -55,81 +59,27 @@ footer #form_text .btn {
   font-style: normal;
   box-shadow: 0px 0px 10px black;
   position: relative;
-  bottom: 81px;
+  bottom: 78px;
 }
-@media only screen and (max-width: 600px){
-  /* .lastpage{
-  height: 22vh;
-  width: 100%;
-} */
-  footer{
-    min-height: 100vh;
-    width: 100%;
-    text-align:  center;
-  }
-  footer #form{
+
+@media screen and (max-width:600px) {
+  footer #form_text h1 {
     position: relative;
-    bottom: 10vh;
+    bottom: 0vh;
   }
-  footer h1 {
-  font-size: 2rem;
 
-}
-footer #form_text h1 {
-  position: relative;
-  bottom: 0px;
-  right: 4.3vh;
-}
-footer #form_text p {
-  position: relative;
-  bottom: 1vh;
-  right: 4vh;
-}
-
-footer #form_text .form-control {
-  position: relative;
-  bottom: 0px;
-  top: 2vh;
-  left: 3.4vh;
-  width: 300px;
-  padding: 8px;
-}
-footer #form_text .btn {
-  position: relative;
-  bottom: 0;
-  top: 12vh;
-  right: 23vh;
-}
-footer #learn{
-  position: relative;
-  top:5vh ;
-  
-}
-footer #credits{
+  footer #form_text p {
     position: relative;
-  top: 5vh;
-  
-}
-}
-@media screen and (max-width:394px) {
-footer #form_text h1 {
-  position: relative;
-  right: 9vh;
-}
-footer #form_text p {
-  position: relative;
-  right: 8.8vh;
-}
+    bottom: 0vh;
+  }
 
-footer #form_text .form-control {
-  position: relative;
-  bottom: 0px;
-  left: 1.4vw;
-}
-footer #form_text .btn {
-  position: relative;
-  bottom: 0;
-  top: 13vh;
-  right: 60vw;
-}
+  footer #email {
+    position: relative;
+    bottom: 0vh;
+  }
+
+  footer #submit {
+    position: relative;
+    bottom: 0vh;
+  }
 }

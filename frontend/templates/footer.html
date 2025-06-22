@@ -5,39 +5,46 @@
                 <div id="form">
                     <form action="/email/" id="form_text" method="POST">
                         {% csrf_token %}
-
-                        <h1 class="my-5 text-center">Enjoy Your learning</h1>
-                        <p>This website is used to learn various technologies.</p>
-                        <div class="d-flex">
-                            <input class="form-control me-3 " type="email" placeholder="you@gamil.com" name="email" id="email">
-                            <input class="btn btn-outline-dark px-4" type="submit" onclick="submitEmail()">
+                        <div class="row">
+                            <div class="col-12 d-flex justify-content-center">
+                                <h1 class="my-lg-5  text-center">Enjoy Your learning</h1>
+                            </div>
+                            <div class="col-12 d-flex justify-content-center">
+                                <p class="text-center py-4">This website is used to learn various technologies.</p>
+                            </div>
+                            <div class=" col-12 d-flex justify-content-center">
+                                <input class="form-control " type="email" placeholder="you@gamil.com" name="email"
+                                    id="email">
+                            </div>
+                            <div class=" col-12 d-flex justify-content-center">
+                                <input class="btn btn-outline-dark px-4 py-2 mt-lg-4 mt-4" type="submit" id="submit"  onclick="submitEmail()">
+                            </div>
                         </div>
                     </form>
                 </div>
             </div>
-            <div class="col-lg-3 col-11 ">
+            <div class="col-lg-3 col-11 mt-4">
                 <div id="learn">
-                    <h1 class="my-4">Learn</h1>
-                    <p class="my-4">HTML</p>
-                    <p class="my-4">CSS</p>
-                    <p class="my-4">Javascript</p>
-                    <p class="my-4">React</p>
-                    <p class="my-4">Bootstrap</p>
-                    <p class="my-4">Python</p>
-                    <p class="my-4">Django</p>
+                    <h1 class="my-4 text-center">Learn</h1>
+                    <p class="my-4 text-center">HTML</p>
+                    <p class="my-4 text-center">CSS</p>
+                    <p class="my-4 text-center">Javascript</p>
+                    <p class="my-4 text-center">React</p>
+                    <p class="my-4 text-center">Bootstrap</p>
+                    <p class="my-4 text-center">Python</p>
+                    <p class="my-4 text-center">Django</p>
                 </div>
             </div>
             <div class="col-lg-3 col-11">
                 <div id="credits">
-                    <h1 class="my-4">video credits</h1>
-                    <p class="my-4">Error Makes Clever</p>
-                    <p class="my-4">Code io</p>
-                    <p class="my-4">Code Camp Tamil</p>
-                    <p class="my-4">JASF Code School Tamil</p>
-                    <p class="my-4">Jvl Code</p>
+                    <h1 class="my-4 text-center">video credits</h1>
+                    <p class="my-4 text-center">Error Makes Clever</p>
+                    <p class="my-4 text-center">Code io</p>
+                    <p class="my-4 text-center">Code Camp Tamil</p>
+                    <p class="my-4 text-center">JASF Code School Tamil</p>
+                    <p class="my-4 text-center">Jvl Code</p>
                 </div>
             </div>
         </div>
     </div>
 </footer>
-<!-- <section class="lastpage"></section>` -->
