@@ -7,7 +7,8 @@
   box-sizing: border-box;
 }
 
-html,body {
+html,
+body {
   overflow-x: hidden !important;
 }
 
@@ -16,7 +17,8 @@ html,body {
   width: 100%;
   background-color: #7445FF;
 }
-.first_section .container{
+
+.first_section .container {
   height: 100vh;
   width: 100%;
   display: flex;
@@ -26,9 +28,10 @@ html,body {
   bottom: 10vh;
   left: 8vh;
 }
-@media screen and (max-width:600px){
 
-  .first_section .container{
+@media screen and (max-width:600px) {
+
+  .first_section .container {
     display: flex;
     flex-direction: column;
     position: relative;
@@ -37,6 +40,7 @@ html,body {
     bottom: 0;
   }
 }
+
 .first_section h2 {
   font-size: 44px;
   font-family: "Monoton", sans-serif;
@@ -48,7 +52,7 @@ html,body {
 }
 
 .first_section button {
-  background-color: #FDDD35; 
+  background-color: #FDDD35;
   color: #030303 !important;
   border: none !important;
   box-shadow: 0px 0px 10px black;
@@ -114,7 +118,8 @@ html,body {
   .first_section {
     min-height: 100vh;
   }
-  #intro{
+
+  #intro {
     position: relative;
     top: 2vh;
   }
@@ -159,7 +164,7 @@ html,body {
     display: flex;
     justify-content: center;
     align-items: center;
-    
+
   }
 
   #img_banner {
@@ -186,31 +191,37 @@ html,body {
     position: relative;
     top: 7vh;
   }
-  .first_section button{
+
+  .first_section button {
     position: relative;
     left: 26vw;
   }
-  .first_section button a{
+
+  .first_section button a {
     font-size: 0.7rem;
     font-weight: bolder;
-    
+
   }
-    #logo_img {
+
+  #logo_img {
     position: relative;
     top: 11vh;
     z-index: 3;
     display: flex;
     justify-content: center;
   }
-    #logo_img p {
+
+  #logo_img p {
     position: relative;
     top: 12vh;
   }
-    #logo_img img {
+
+  #logo_img img {
     position: relative;
     top: 11.5vh;
   }
-   #img_banner {
+
+  #img_banner {
     height: 180px !important;
     width: 258px !important;
     position: absolute;
@@ -218,7 +229,8 @@ html,body {
     top: 52vh;
     z-index: 1;
   }
-    #img_banner2 {
+
+  #img_banner2 {
     height: 230px !important;
     width: 264px !important;
     position: absolute;
@@ -264,50 +276,60 @@ html,body {
   z-index: 3;
 
 }
+
 @media screen and (min-width:420px) and (max-width:435px) {
-    .first_section h2 {
+  .first_section h2 {
     font-size: 1.8rem;
     position: relative;
     top: 11.5vh;
     left: 10vw;
   }
-  .first_section button{
+
+  .first_section button {
     position: relative;
     left: 22vw;
     top: 0vh;
   }
-  .first_section button a{
+
+  .first_section button a {
     font-size: 1rem;
     font-weight: bolder;
-    
+
   }
-   #img_banner {
+
+  #img_banner {
     height: 200px !important;
     width: 278px !important;
   }
-    #img_banner2 {
+
+  #img_banner2 {
     height: 250px !important;
     width: 284px !important;
     position: absolute;
     left: 7.4vh;
   }
-  .second_section{
+
+  .second_section {
     min-height: 134vh !important;
 
   }
-    footer form h1{
+
+  footer form h1 {
     position: relative;
     top: 4vh;
   }
-  footer form p{
+
+  footer form p {
     position: relative;
     top: 3vh;
   }
+
   footer #form_text .form-control {
     position: relative;
     top: 5vh !important;
   }
-  footer #form_text .btn{
+
+  footer #form_text .btn {
     position: relative;
     right: 42.2vw !important;
     top: 14vh !important;
@@ -315,11 +337,12 @@ html,body {
 }
 
 @media only screen and (max-width: 600px) {
-  .second_section{
+  .second_section {
     position: relative;
     min-height: 132vh;
   }
-.second_section h1 {
+
+  .second_section h1 {
     position: absolute;
     font-size: 1.7rem;
     left: 2.5vh;
@@ -339,45 +362,49 @@ html,body {
     position: relative;
     left: 0.8vh;
   }
-  #card-course{
+
+  #card-course {
     position: relative;
     top: 18vh;
   }
-  }
-  @media screen and (max-width:361px) {
-      .second_section{
+}
+
+@media screen and (max-width:361px) {
+  .second_section {
     position: relative;
     min-height: 148vh !important;
   }
 }
-  @media screen and (max-width:394px) {
-      .second_section{
+
+@media screen and (max-width:394px) {
+  .second_section {
     position: relative;
     min-height: 135vh;
   }
+
   .second_section h1 {
     position: absolute;
     font-size: 1.5rem;
     top: 9.4vh;
   }
-      #card1 img{
+
+  #card1 img {
     width: 360px;
     height: 320px;
   }
 
-    #card2 img{
+  #card2 img {
     width: 360px;
     height: 320px;
   }
 
-  #card3 img{
+  #card3 img {
     width: 360px;
     height: 320px;
   }
-  
-.second_section_card h3 {
-  position: absolute;
-  top: 10vh;
+
+  .second_section_card h3 {
+    position: absolute;
+    top: 10vh;
+  }
 }
-}
-

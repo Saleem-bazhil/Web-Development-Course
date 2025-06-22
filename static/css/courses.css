@@ -2,14 +2,15 @@
   margin: 0px;
   padding: 0px;
 }
-html,body {
+
+html,
+body {
   overflow-x: hidden !important;
 }
 
 .courses {
   min-height: 100vh;
   width: 100%;
-  /* background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../assets/images/purple.png); */
   background-color: #7445FF;
 }
 
@@ -20,7 +21,6 @@ html,body {
 }
 
 .card {
-  /* background-image: url(../assets/images/wallpaper.png) !important; */
   background: black !important;
   backdrop-filter: blur(10px);
   border: 2px solid black;
@@ -33,9 +33,10 @@ html,body {
 
 .card:hover {
   transform: scale(1.03);
- box-shadow: 0 0px 20px rgba(0, 0, 0, 0.8);
+  box-shadow: 0 0px 20px rgba(0, 0, 0, 0.8);
 }
-.card .btn{
+
+.card .btn {
   background: linear-gradient(135deg, rgba(116, 69, 255, 0.8), rgba(173, 90, 255, 0.7));
   border: 2px solid rgba(116, 69, 255, 0.6);
   padding: 12px;
@@ -45,7 +46,8 @@ html,body {
   transition: all 0.3s ease;
   position: relative;
   left: 5px;
-} 
+}
+
 .card .btn:hover {
   transform: scale(1.05);
   box-shadow: 0 6px 30px rgba(116, 69, 255, 0.9);
