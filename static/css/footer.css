@@ -65,6 +65,7 @@ footer #submit {
   footer #form_text h1 {
     position: relative;
     bottom: 0vh;
+    font-size: 1.8rem;
   }
 
   footer #form_text p {
