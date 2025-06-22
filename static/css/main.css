@@ -195,7 +195,7 @@ html,body {
     font-weight: bolder;
     
   }
-    .first_section button a:hover{
+    .first_section button:hover{
     font-size: 0.7rem;
     font-weight: bolder;
     
