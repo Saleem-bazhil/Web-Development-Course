@@ -369,7 +369,7 @@ body {
   }
 }
 
-@media screen and (max-width:361px) {
+@media screen and (max-width:367px) {
   .second_section {
     position: relative;
     min-height: 165vh !important;
