@@ -195,11 +195,6 @@ html,body {
     font-weight: bolder;
     
   }
-    .first_section button:hover{
-    font-size: 0.7rem;
-    font-weight: bolder;
-    
-  }
     #logo_img {
     position: relative;
     top: 11vh;
@@ -269,11 +264,60 @@ html,body {
   z-index: 3;
 
 }
+@media screen and (min-width:420px) and (max-width:435px) {
+    .first_section h2 {
+    font-size: 1.8rem;
+    position: relative;
+    top: 11.5vh;
+    left: 10vw;
+  }
+  .first_section button{
+    position: relative;
+    left: 22vw;
+    top: 0vh;
+  }
+  .first_section button a{
+    font-size: 1rem;
+    font-weight: bolder;
+    
+  }
+   #img_banner {
+    height: 200px !important;
+    width: 278px !important;
+  }
+    #img_banner2 {
+    height: 250px !important;
+    width: 284px !important;
+    position: absolute;
+    left: 7.4vh;
+  }
+  .second_section{
+    min-height: 134vh !important;
+
+  }
+    footer form h1{
+    position: relative;
+    top: 4vh;
+  }
+  footer form p{
+    position: relative;
+    top: 3vh;
+  }
+  footer #form_text .form-control {
+    position: relative;
+    top: 5vh !important;
+  }
+  footer #form_text .btn{
+    position: relative;
+    right: 42.2vw !important;
+    top: 14vh !important;
+  }
+}
 
 @media only screen and (max-width: 600px) {
   .second_section{
     position: relative;
-    min-height: 150vh;
+    min-height: 132vh;
   }
 .second_section h1 {
     position: absolute;
@@ -300,11 +344,16 @@ html,body {
     top: 18vh;
   }
   }
-
+  @media screen and (max-width:361px) {
+      .second_section{
+    position: relative;
+    min-height: 148vh !important;
+  }
+}
   @media screen and (max-width:394px) {
       .second_section{
     position: relative;
-    min-height: 170vh;
+    min-height: 135vh;
   }
   .second_section h1 {
     position: absolute;
