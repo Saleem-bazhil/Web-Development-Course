@@ -26,12 +26,12 @@ SECRET_KEY = "django-insecure-lv&41ptic^n77!2w$*#@n0)_n*tca8h-=ou4a6hx5fx9*$k8cw
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ['webweb-0gsq.onrender.com', 'localhost', '127.0.0.1']
+ALLOWED_HOSTS = ['web-development-course-pdxz.onrender.com', 'localhost', '127.0.0.1']
 
 SECURE_PROXY_SSL_HEADER = ('HTTP_X_FORWARDED_PROTO', 'https')
 
 CSRF_TRUSTED_ORIGINS = [
-    "https://webweb-0gsq.onrender.com",
+    "https://web-development-course-pdxz.onrender.com",
 ]
 
 
