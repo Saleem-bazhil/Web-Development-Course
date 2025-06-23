@@ -288,7 +288,7 @@ body {
   .first_section button {
     position: relative;
     left: 22vw;
-    top: 0vh;
+    top: 0vh !important;
   }
 
   .first_section button a {
@@ -369,7 +369,7 @@ body {
   }
 }
 
-@media screen and (max-width:367px) {
+@media screen and (max-width:361px) {
   .second_section {
     position: relative;
     min-height: 165vh !important;
@@ -406,5 +406,15 @@ body {
   .second_section_card h3 {
     position: absolute;
     top: 10vh;
+  }
+}
+@media screen and (max-height: 740px) and (min-height: 720px) {
+  .second_section{
+    min-height: 160vh !important;
+  }
+}
+@media screen and (max-width:482px) {
+  .second_section{
+    min-height: 140vh;
   }
 }
